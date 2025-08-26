@@ -12,7 +12,7 @@ require('dotenv').config(); // Load environment variables from .env file into pr
 // List of environment variables that are required for the app to function
 const requiredVars = ["MONGODB_URI", "JWT_SECRET"];
 
-// Validate each required variable
+//Validate each required variable
 requiredVars.forEach((key) => {
   if (!process.env[key]) {
     throw new Error(`Missing required environment variable: ${key}`);
